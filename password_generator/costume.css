@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lato:wght@300&family=Mulish:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&family=Teko:wght@300;700&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main #container {
+    width: 40%;
+    background-color: rgb(58, 31, 31);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 20px;
+}
+
+.main #container #pass {
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.main #container .choice {
+    padding: 20px;
+    color: white;
+}
+
+.main #container .choice .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.main #container .choice .row #totalchar{
+    height: 5px;
+    padding: 10px;
+    color: black;
+    width: 48px;
+     
+}
+#btn{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn:hover{
+    box-shadow: 0px 0px 5px gray;
+}

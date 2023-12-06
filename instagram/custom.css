@@ -1,0 +1,195 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+
+}
+
+main{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(61, 56, 56);
+}
+
+.container{
+    height: 70%;
+    width: 20%;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+
+}
+.container .icon{
+    font-size: 22px;
+   margin-right: 10px;
+}
+.icon i{
+    /* margin: 0px 3px; */
+    cursor: pointer;
+}
+.container .nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h2{
+    font-family: 'Norican', cursive;
+    font-size: 28px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.container .line{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    display: none;
+    animation: animi linear forwards 5s;
+    z-index:99;
+}
+@keyframes animi {
+    100%{
+        width: 0%;
+    }
+    
+}
+
+#fullScreen{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 9;
+    transition: ease-in-out;
+    padding:50px 0px;
+    background-color: black;
+
+}
+#fullScreen img{
+    height: 80%;
+    position: absolute;
+    width:100%;
+    object-fit: cover;
+}
+.story{
+    white-space: nowrap;
+    height: 100px;
+    width: 100%;
+    transition: 0.5s;
+    /* border-bottom: 1px solid black; */
+}
+.container .circle{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin: 15px 0px;
+    margin-right: 3px;
+    border: 3px solid transparent;
+    background-image: linear-gradient(white,white),
+    linear-gradient(45deg, yellow,orange , rgb(234, 0, 255), red);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    
+    border-radius: 50%;
+    cursor: pointer;
+   display: inline-block;
+    overflow: hidden;
+}
+.container .circle img{
+  
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+.container #left,#right{
+    color: black;
+    font-size: 18px;
+    margin: 0px 5px;
+    margin-top: 32px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px grey;
+    padding: 5px 9px;
+    cursor: pointer;
+    z-index: 1;
+   
+   
+   
+}
+.container #right{
+    position: absolute;
+    right: 0px;
+    top:41px;
+    
+    
+}
+.container #left{
+    position: absolute;
+    left: 0px;
+    top:41px;
+    
+    
+}
+.post{
+    position: relative;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+.post i{
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.post img{
+    /* margin-top: 20px; */
+    object-fit: cover;
+    overflow: hidden;
+    height: 90%;
+    width: 100%;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lato:wght@300&family=Mulish:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&family=Teko:wght@300;700&display=swap');
+.post .name{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 4px 0px;
+    align-items: center;
+
+}
+.post h4{
+    font-size: 13px;
+}
+.post .icon{
+    margin: 0px;
+
+}
+.post .icon #save{
+    position: absolute;
+    right: 10px;
+}
+.name img{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+   margin:0px 5px;
+}
+.love{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 50px;
+    transform:translate(-50%,-50%) scale(0);
+    color:rgb(255, 123, 123);
+    transition: transform ease-in-out 0.4s;
+    opacity: 0;
+}
